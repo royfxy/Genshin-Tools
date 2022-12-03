@@ -1,6 +1,6 @@
 import React from "react"
 import { FormattedMessage } from "react-intl"
-import styles from "./footer.module.scss"
+import styles from "./index.module.scss"
 
 const Footer: React.FC = () => {
   return (
