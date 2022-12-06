@@ -36,5 +36,18 @@
                 "char_id": "klee"
             }
         ]
+    },
+    {
+        "id": 3,
+        "name": "Phase 3",
+        "characters": [{
+                "id": 1,
+                "char_id": "wanderer"
+            },
+            {
+                "id": 2,
+                "char_id": "klee"
+            }
+        ]
     }
 ]
