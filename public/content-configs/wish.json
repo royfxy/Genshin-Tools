@@ -1,0 +1,40 @@
+[{
+        "id": 1,
+        "name": "Phase 1",
+        "characters": [{
+                "id": 1,
+                "char_id": "wanderer"
+            },
+            {
+                "id": 2,
+                "char_id": "arataki_itto"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Phase 2",
+        "characters": [{
+                "id": 1,
+                "char_id": "raiden_shogun"
+            },
+            {
+                "id": 2,
+                "char_id": "kamisato_ayato"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Phase 3",
+        "characters": [{
+                "id": 1,
+                "char_id": "nahida"
+            },
+            {
+                "id": 2,
+                "char_id": "klee"
+            }
+        ]
+    }
+]

@@ -1,11 +1,13 @@
 import "../styles/globals.scss"
+import "../styles/colors.scss"
+import "../styles/font.scss"
 import type { AppProps } from "next/app"
 import React from "react"
 
 import { IntlProvider } from "react-intl"
-import lang from "./lang/lang"
+import lang from "lib/lang/lang"
 
-const locale = "zh"
+const locale = "zh-CN"
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

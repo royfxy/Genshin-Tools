@@ -1,0 +1,18 @@
+{
+    "HELLO": "Hello!",
+    "disclaimer": "genshin.tools is not affiliated with or endorsed by HoYoverse.",
+    "copyrightNotice": "Genshin Impact, game content and materials are trademarks and copyrights of HoYoverse.",
+    "character": {
+        "arataki_itto": "Arataki Itto",
+        "kamisato_ayato": "Kamisato Ayato",
+        "klee": "Klee",
+        "nahida": "Nahida",
+        "raiden_shogun": "Raiden Shogun",
+        "wanderer": "Wanderer"
+    },
+    "proper": {
+        "mihoyo": "HoYoverse",
+        "genshinImpact": "Genshin Impact",
+        "event_wish": "Event Wish"
+    }
+}

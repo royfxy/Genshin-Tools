@@ -1,0 +1,43 @@
+[{
+        "id": "arataki_itto",
+        "name": "Arataki Itto",
+        "element": "geo",
+        "stars": 5,
+        "cardImage": "Arataki_Itto.webp"
+    },
+    {
+        "id": "kamisato_ayato",
+        "name": "Kamisato Ayato",
+        "element": "hydro",
+        "stars": 5,
+        "cardImage": "Kamisato_Ayato.webp"
+    },
+    {
+        "id": "klee",
+        "name": "Klee",
+        "element": "pyro",
+        "stars": 5,
+        "cardImage": "Klee.webp"
+    },
+    {
+        "id": "nahida",
+        "name": "Nahida",
+        "element": "dendro",
+        "stars": 5,
+        "cardImage": "Nahida.webp"
+    },
+    {
+        "id": "raiden_shogun",
+        "name": "Raiden Shogun",
+        "element": "electro",
+        "stars": 5,
+        "cardImage": "Raiden_Shogun.webp"
+    },
+    {
+        "id": "wanderer",
+        "name": "Wanderer",
+        "element": "anemo",
+        "stars": 5,
+        "cardImage": "Wanderer.webp"
+    }
+]
