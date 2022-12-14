@@ -1,0 +1,18 @@
+{
+    "HELLO": "你好！",
+    "disclaimer": "Genshin.tools 与米哈游官方没有任何关系。",
+    "copyrightNotice": "所有原神的游戏内容，素材与商标版权均属于米哈游。",
+    "character": {
+        "arataki_itto": "荒泷一斗",
+        "kamisato_ayato": "神里绫人",
+        "klee": "可莉",
+        "nahida": "纳西妲",
+        "raiden_shogun": "雷电将军",
+        "wanderer": "流浪者"
+    },
+    "proper": {
+        "mihoyo": "米哈游",
+        "genshinImpact": "原神",
+        "event_wish": "活动祈愿"
+    }
+}
