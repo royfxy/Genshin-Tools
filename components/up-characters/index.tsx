@@ -3,8 +3,11 @@ import CharacterCard from "../character-card"
 
 import styles from "./index.module.scss"
 import { Character } from "lib/utils/characters"
-import { SwiperSelector, SwiperSelectorItem } from "components/swiper-selector"
 import cs from "classnames"
+
+import { Swiper, SwiperSlide } from "swiper/react"
+import "swiper/scss"
+import { Mousewheel } from "swiper"
 
 interface UpCharactersPhaseProps {
   characters: Character[]
@@ -52,18 +55,23 @@ export const UpCharactersPhaseList: React.FC<UpCharactersPhaseListProps> = ({
   const [selected, setSelected] = useState<number>(0)
 
   return (
-    <SwiperSelector value={1}>
+    <Swiper
+      className={styles.swiper}
+      slidesPerView={"auto"}
+      mousewheel
+      modules={[Mousewheel]}
+    >
       {/* <Swiper value={1} className={styles.listContainer}>*/}
       {phases.map((characters, index) => (
-        <SwiperSelectorItem key={index}>
+        <SwiperSlide className={styles.slide} key={index}>
           <UpCharactersPhase
             selected={index == selected}
             characters={characters}
             onClick={() => setSelected(index)}
           />
-        </SwiperSelectorItem>
+        </SwiperSlide>
       ))}
-    </SwiperSelector>
+    </Swiper>
   )
 }
 

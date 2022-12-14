@@ -7,8 +7,8 @@ import { wishCharacters } from "lib/utils/wish-parser"
 export default function Home() {
   return (
     <div className={styles.container}>
+      123
       <UpCharactersPhaseList phases={wishCharacters} />
-
       <Footer />
     </div>
   )

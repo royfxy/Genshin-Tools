@@ -4,8 +4,7 @@
     background-color: var(--color-bakcground-light-200);
     border: 1px solid var(--color-border-light);
     box-shadow: 0 0 0 1px var(--color-bakcground-light-200);
-    margin: 5px 0;
-    margin-right: 10px;
+    margin: 5px;
     padding: 5px;
     padding-right: 0;
     border-radius: 2px;
@@ -17,6 +16,15 @@
         background-color: var(--color-bakcground-light-300);
         transform: scale(1.02);
     }
+}
+
+.swiper {
+    margin-right: -10px !important;
+}
+
+.slide {
+    flex-shrink: 1 !important;
+    width: auto !important;
 }
 
 .listContainer {
