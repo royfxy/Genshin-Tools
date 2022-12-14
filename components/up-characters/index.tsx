@@ -9,11 +9,13 @@ import cs from "classnames"
 interface UpCharactersPhaseProps {
   characters: Character[]
   selected: boolean
+  onClick?: () => void
 }
 
 const UpCharactersPhase: React.FC<UpCharactersPhaseProps> = ({
   characters,
   selected,
+  onClick,
 }) => {
   // import images
   const images = characters.map((character) => {
@@ -27,7 +29,7 @@ const UpCharactersPhase: React.FC<UpCharactersPhaseProps> = ({
   }, [selected])
 
   return (
-    <div className={cs(classNames)}>
+    <div className={cs(classNames)} onClick={onClick}>
       {characters.map((character, index) => (
         <CharacterCard
           key={index}
@@ -47,12 +49,18 @@ interface UpCharactersPhaseListProps {
 export const UpCharactersPhaseList: React.FC<UpCharactersPhaseListProps> = ({
   phases,
 }) => {
+  const [selected, setSelected] = useState<number>(0)
+
   return (
     <SwiperSelector value={1}>
       {/* <Swiper value={1} className={styles.listContainer}>*/}
       {phases.map((characters, index) => (
         <SwiperSelectorItem key={index}>
-          <UpCharactersPhase selected={false} characters={characters} />
+          <UpCharactersPhase
+            selected={index == selected}
+            characters={characters}
+            onClick={() => setSelected(index)}
+          />
         </SwiperSelectorItem>
       ))}
     </SwiperSelector>

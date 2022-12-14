@@ -1,6 +1,7 @@
 import "../styles/globals.scss"
 import "../styles/colors.scss"
 import "../styles/font.scss"
+import "../styles/transition.scss"
 import type { AppProps } from "next/app"
 import React from "react"
 

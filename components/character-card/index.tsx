@@ -9,15 +9,17 @@ interface CharacterCardProps {
   character: Character
   src: string
   element: Elem
+  onClick?: () => void
 }
 
 const CharacterCard: React.FC<CharacterCardProps> = ({
   character,
   src,
   element,
+  onClick,
 }) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} onClick={onClick}>
       <div className={styles.imageContainer}>
         <Image className={styles.image} src={src} alt={character.name} fill />
       </div>

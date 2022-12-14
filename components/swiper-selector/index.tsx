@@ -9,6 +9,7 @@ import {
 import styles from "./index.module.scss"
 
 import "swiper/scss"
+import { Mousewheel } from "swiper"
 
 interface SwiperSelectorProps extends SwiperProps {
   children: React.ReactNode
@@ -16,11 +17,24 @@ interface SwiperSelectorProps extends SwiperProps {
 }
 
 export const SwiperSelector: React.FC<SwiperSelectorProps> = (props) => {
-  const { value, ...rest } = props
-  return <Swiper loopAdditionalSlides={5} slidesPerView={"auto"} {...rest} />
+  const { ...rest } = props
+  return (
+    <Swiper
+      onActiveIndexChange={(swiper) => {
+        console.log(swiper.activeIndex)
+      }}
+      loopAdditionalSlides={5}
+      slidesPerView={"auto"}
+      mousewheel
+      modules={[Mousewheel]}
+      {...rest}
+    />
+  )
 }
 
-type SwiperSelectorItemProps = SwiperSlideProps
+interface SwiperSelectorItemProps extends SwiperSlideProps {
+  selected?: boolean
+}
 
 const SwiperSelectorItem: React.FC<SwiperSelectorItemProps> = (props) => {
   return <SwiperSlide className={styles.swiperSelectorItem} {...props} />
