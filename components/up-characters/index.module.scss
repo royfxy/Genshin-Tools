@@ -19,14 +19,10 @@
 }
 
 .swiper {
-    margin-right: -10px !important;
+    margin-right: calc(-1 * var(--page-padding))!important;
 }
 
 .slide {
     flex-shrink: 1 !important;
     width: auto !important;
-}
-
-.listContainer {
-    // display: flex;
 }

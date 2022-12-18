@@ -1,14 +1,12 @@
 import React from "react"
-import styles from "../styles/Home.module.scss"
+import styles from "./Home.module.scss"
 import Footer from "../components/footer"
-import { UpCharactersPhaseList } from "../components/up-characters"
-import { wishCharacters } from "lib/utils/wish-parser"
+import { Title } from "components/typography"
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      123
-      <UpCharactersPhaseList phases={wishCharacters} />
+      <Title level={1}>Genshin Toools</Title>
       <Footer />
     </div>
   )
