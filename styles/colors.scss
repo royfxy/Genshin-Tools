@@ -1,4 +1,4 @@
-:root {
+@mixin light {
     --color-primary: #bf9e5c;
     --color-element-anemo-dark: #153434;
     --color-element-geo-dark: #3d3015;
@@ -14,17 +14,41 @@
     --color-selected: #dbb7a7;
     --color-text-dark: #4a5362;
     --color-text-dark-200: #949599;
+    --color-text-light: #E8E5D7;
+    --color-slider-track: #5F6881;
+    --color-slider: #F1EEE7;
+    --color-slider-border: #D4CFC9;
 }
 
-@media (prefers-color-scheme: dark) {
-     :root {
-        --color-background-light: #3f4554;
-        --color-bakcground-light-100: #252c36;
-        --color-bakcground-light-200: #2d3644;
-        --color-bakcground-light-300: #4b5265;
-        --color-border-light: #42484f;
-        --color-selected: #d2c9b4;
-        --color-text-dark: #f6fdff;
-        --color-text-dark-200: #919499;
+@mixin dark {
+    --color-background-light: #3f4554;
+    --color-bakcground-light-100: #252c36;
+    --color-bakcground-light-200: #2d3644;
+    --color-bakcground-light-300: #4b5265;
+    --color-border-light: #42484f;
+    --color-selected: #d2c9b4;
+    --color-text-dark: #f6fdff;
+    --color-text-dark-200: #919499;
+    --color-text-light: #4D5568;
+    --color-slider: #0d0a025d;
+    --color-slider-track: #FEF7EB;
+    --color-slider-border: transparent;
+}
+
+:root {
+    &:not(.dark) {
+        @include light;
+    }
+    // dark mode
+    @media (prefers-color-scheme: dark) {
+        &:not(.light) {
+            @include dark;
+        }
+        .light {
+            @include light;
+        }
+    }
+    .dark {
+        @include dark;
     }
 }

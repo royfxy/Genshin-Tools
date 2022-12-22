@@ -1,0 +1,56 @@
+.text {
+    &.primary {
+        color: var(--color-text-dark);
+    }
+    &.secondary {
+        color: var(--color-text-dark-200);
+    }
+    &.xxl {
+        font-size: var(--font-size-xxl);
+    }
+    &.xl {
+        font-size: var(--font-size-xl);
+    }
+    &.l {
+        font-size: var(--font-size-l);
+    }
+    &.m {
+        font-size: var(--font-size-m);
+    }
+    &.s {
+        font-size: var(--font-size-s);
+    }
+    &.xs {
+        font-size: var(--font-size-xs);
+    }
+    user-select: none;
+}
+
+.title {
+    color: var(--color-text-dark);
+    user-select: none;
+}
+
+.outline {
+    position: relative;
+}
+
+.outlineFront {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+}
+
+.outlineBack {
+    z-index: 1;
+    -webkit-text-stroke-color: var(--color-bakcground-light-300);
+}
+
+.iconText {
+    display: inline-flex;
+    align-items: center;
+    .icon {
+        margin-right: 4px;
+    }
+}

@@ -1,0 +1,51 @@
+.container {
+    position: relative;
+    z-index: 2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px 30px 30px;
+}
+
+.levelsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-column-gap: 50px;
+}
+
+.levelContainer {
+    min-width: 200px;
+    margin: 12px 0;
+}
+
+.levelHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    &>* {
+        text-align: center;
+        flex: 1;
+        &:last-child {
+            text-align: end;
+        }
+        &:first-child {
+            text-align: start;
+        }
+    }
+}
+
+.slider {
+    z-index: 2;
+    position: relative;
+}
+
+.image {
+    object-fit: cover;
+    object-position: right;
+    z-index: 1;
+    filter: brightness(0.5);
+}

@@ -21,7 +21,13 @@ const CharacterCard: React.FC<CharacterCardProps> = ({
   return (
     <div className={styles.card} onClick={onClick}>
       <div className={styles.imageContainer}>
-        <Image className={styles.image} src={src} alt={character.name} fill />
+        <Image
+          className={styles.image}
+          src={src}
+          alt={character.name}
+          fill
+          sizes="200px"
+        />
       </div>
       <div
         className={styles.nameContainer}

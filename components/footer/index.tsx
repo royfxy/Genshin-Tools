@@ -1,4 +1,4 @@
-import { Text } from "components/typography"
+import { Text } from "components/basic-elements/typography"
 import React from "react"
 import { FormattedMessage } from "react-intl"
 import styles from "./index.module.scss"
@@ -6,7 +6,7 @@ import styles from "./index.module.scss"
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
-      <Text type="secondary">
+      <Text size="s" type="secondary">
         <FormattedMessage id="disclaimer" />
         <br />
         <FormattedMessage id="copyrightNotice" />
