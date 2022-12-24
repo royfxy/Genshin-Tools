@@ -52,5 +52,7 @@
     align-items: center;
     .icon {
         margin-right: 4px;
+        user-select: none;
+        -webkit-user-drag: none;
     }
 }

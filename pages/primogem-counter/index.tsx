@@ -1,10 +1,10 @@
 import React from "react"
 import styles from "./index.module.scss"
-import Footer from "components/footer"
-import { UpCharactersPhaseList } from "components/up-characters"
+import Footer from "components/basic-elements/footer"
+import { UpCharactersPhaseList } from "pages/primogem-counter/up-characters"
 import { wishCharacters } from "lib/utils/wish-parser"
 import { Outline, Title } from "components/basic-elements/typography"
-import SpiralAbyssStars from "components/spiral-abyss-stars"
+import SpiralAbyssStars from "pages/primogem-counter/spiral-abyss-stars"
 
 export default function Home() {
   return (
@@ -20,6 +20,8 @@ export default function Home() {
       <Title level={2}>Spiral Abyss</Title>
       <SpiralAbyssStars stars={[]} />
       <Title level={2}>Battle Pass & Welkin Moon</Title>
+      <Title level={2}>Paimon&apos;s Bargain</Title>
+      <Title level={2}>Other</Title>
       <Footer />
     </div>
   )

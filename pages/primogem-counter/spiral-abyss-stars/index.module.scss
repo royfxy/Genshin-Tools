@@ -26,14 +26,15 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
+    text-align: start;
     &>* {
         text-align: center;
         flex: 1;
         &:last-child {
             text-align: end;
         }
-        &:first-child {
-            text-align: start;
+        &:nth-child(2) {
+            justify-content: center;
         }
     }
 }

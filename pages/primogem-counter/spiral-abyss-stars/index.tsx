@@ -8,7 +8,8 @@ import background from "/public/images/background/spiral-abyss.png"
 import cs from "classnames"
 import { IconText, Text, Title } from "components/basic-elements/typography"
 
-import Primogem from "public/images/items/Primogem.png"
+import PrimogemIcon from "public/images/items/Primogem.png"
+import SpiralAbyssStarIcon from "public/images/icons/spiral-abyss-star.png"
 
 interface SpiralAbyssStarsProps {
   stars: number[]
@@ -50,9 +51,11 @@ const SpiralAbyssStars: React.FC<SpiralAbyssStarsProps> = () => {
             <div className={styles.levelContainer} key={index}>
               <div className={styles.levelHeaderContainer}>
                 <Text strong>Level {index + 9}</Text>
-                <Text strong>{value} Stars</Text>
+                <IconText icon={SpiralAbyssStarIcon.src} strong>
+                  {value}/9
+                </IconText>
                 <div>
-                  <IconText strong icon={Primogem.src}>
+                  <IconText strong icon={PrimogemIcon.src}>
                     {primogems[index]}
                   </IconText>
                 </div>
