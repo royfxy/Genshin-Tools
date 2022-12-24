@@ -1,10 +1,10 @@
 import React from "react"
 import styles from "./index.module.scss"
 import Footer from "components/basic-elements/footer"
-import { UpCharactersPhaseList } from "pages/primogem-counter/up-characters"
+import { UpCharactersPhaseList } from "./up-characters"
 import { wishCharacters } from "lib/utils/wish-parser"
 import { Outline, Title } from "components/basic-elements/typography"
-import SpiralAbyssStars from "pages/primogem-counter/spiral-abyss-stars"
+import SpiralAbyssStars from "./spiral-abyss-stars"
 
 export default function Home() {
   return (
